@@ -51,8 +51,20 @@ p {
   margin: 10px;
 }
 
-img{
+#lara-img{
   margin: 10px;
+  width: 50;
+  height: 50;
+}
+
+#spscc-img{
+  width: 50;
+  height: 50;
+}
+
+#codefellowslogo-img{
+  width: 50;
+  height: 50;
 }
 
 footer{
