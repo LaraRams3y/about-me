@@ -1,4 +1,54 @@
-body{
+* {
+  border: 2px solid goldenrod
+}
+
+body {
   background-color:black;
   color: goldenrod;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  padding: 30px;
+}
+
+nav button {
+  text-align: center;
+  display: flexbox;
+  vertical-align: middle;
+}
+
+#mainheader {
+  padding-right: 700px;
+}
+
+main {
+  padding: 30px;
+}
+
+section {
+  display: inline-flex;
+  vertical-align:-webkit-baseline-middle;
+}
+
+p {
+  margin: 10px;
+}
+
+img{
+  margin: 50px;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
 }
