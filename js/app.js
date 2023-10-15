@@ -47,7 +47,7 @@ if (q4 === 'y' || q4 === 'yes'){
 let q5 = prompt ('Do I like Dia De Los Muertos?').toUpperCase();
 
 if (q5 === 'Y' || q5 === 'YES'){
-  alert('Si, es la verdad! It\'s my favorite!' + ' Thank you for playing this guessing game with me, ' + userName +'!');
+  alert('Si, es la verdad! It\'s my favorite!' + ' Thank you for playing this guessing game with me, ' + userName + '!');
 } else if(q5 === 'N' || q5 === 'NO'){
   alert('Ai caramba, pobrecito! You are very mistaken.' + ' Thank you for playing this guessing game with me, ' + userName + '. Better luck next time! LOL!');
 }
