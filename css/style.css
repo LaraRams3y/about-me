@@ -1,6 +1,6 @@
-* {
+/* {
   border: 2px solid goldenrod
-}
+}*/
 
 body {
   background-color:black;
@@ -58,7 +58,6 @@ p {
 }
 
 #spscc-img {
-  margin: 10;
   width: 50;
   height: 50;
 }
