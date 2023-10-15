@@ -15,6 +15,12 @@ if(q1 === 'y' || q1 === 'yes'){
   alert('Wrong! I do have a daughter. She\'s fabulous! Next question...');
 }
 
+//if(q1 === 'y' || q1 === 'yes'){
+//  console.log('You are correct! Next question...');
+//} else if(q1 === 'n' || q1 === 'no'){
+//  console.log('Wrong! I do have a daughter. She\'s fabulous! Next question...');
+//}
+
 //Q2
 let q2 = prompt ('Do I have a son?').toLowerCase();
 
@@ -23,6 +29,12 @@ if(q2 === 'y' || q2 === 'yes'){
 } else if(q2 === 'n' || q2 === 'no'){
   alert('Fail! I do. He\'s a sweetie! Next question...');
 }
+
+//if(q2 === 'y' || q2 === 'yes'){
+//  console.log('Correct again! Next question...');
+//} else if(q2 === 'n' || q2 === 'no'){
+//  condole.log('Fail! I do. He\'s a sweetie! Next question...');
+//}
 
 //Q3
 let q3 = prompt ('Do I have 12 kiddos?').toUpperCase();
@@ -33,6 +45,11 @@ if(q3 === 'Y' || q3 === 'YES'){
   alert('That\'s for darn certain. I\'m gonna leave that kind of child rearing to the great grandmothers. Next question...');
 }
 
+//if(q3 === 'Y' || q3 === 'YES'){
+//  console.log('Pppphhhhfffwahahahaha! No way!! Next question...');
+//} else if( q3 === 'N' || q3 === 'NO'){
+//  console.log('That\'s for darn certain. I\'m gonna leave that kind of child rearing to the great grandmothers. Next question...');
+//}
 
 //Q4
 let q4 = prompt ('Do I like Halloween?').toLowerCase();
@@ -43,6 +60,12 @@ if (q4 === 'y' || q4 === 'yes'){
   alert('Booo! You are soo wrong. Next question...');
 }
 
+//if (q4 === 'y' || q4 === 'yes'){
+//  console.log('Totally! Next question...');
+//} else if(q4 === 'n' || q4 === 'no'){
+//  console.log('Booo! You are soo wrong. Next question...');
+//}
+
 //Q5
 let q5 = prompt ('Do I like Dia De Los Muertos?').toUpperCase();
 
@@ -52,6 +75,11 @@ if (q5 === 'Y' || q5 === 'YES'){
   alert('Ai caramba, pobrecito! You are very mistaken.' + ' Thank you for playing this guessing game with me, ' + userName + '. Better luck next time! LOL!');
 }
 
+//if (q5 === 'Y' || q5 === 'YES'){
+//  console.log('Si, es la verdad! It\'s my favorite!' + ' Thank you for playing this guessing game with me, ' + userName + '!');
+//} else if(q5 === 'N' || q5 === 'NO'){
+//  console.log('Ai caramba, pobrecito! You are very mistaken.' + ' Thank you for playing this guessing game with me, ' + userName + '. Better luck next time! LOL!');
+//}
 
 
 
