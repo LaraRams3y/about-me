@@ -6,6 +6,7 @@ let userName = prompt('Hello. What is your name?');
 
 alert(`Welcome to my site ${userName}. Let's play a guessing game. Please answer yes/no or y/n.`);
 
+//So cool! Adding the counter.
 let correctCount = 0;
 
 //Q1
@@ -82,14 +83,37 @@ if (q5 === 'Y' || q5 === 'YES'){
   alert('Ai caramba, pobrecito! You are very mistaken. Better luck next time! LOL!');
 }
 
-alert(`Thank you for playing this guessing game with me, ${userName}! You got ${correctCount} out of 5 correct!`);
-
 //if (q5 === 'Y' || q5 === 'YES'){
 //  console.log('Si, es la verdad! It\'s my favorite!' + ' Thank you for playing this guessing game with me, ' + userName + '!');
 //} else if(q5 === 'N' || q5 === 'NO'){
 //  console.log('Ai caramba, pobrecito! You are very mistaken.' + ' Thank you for playing this guessing game with me, ' + userName + '. Better luck next time! LOL!');
 //}
 
+//Q6
+
+let attempts = 4;
+let q6;
+
+while (attempts > 0) {
+  q6 = prompt ('My daughter loves guinea pigs. During pandemic, she convinced us to get a couple. Somehow that couple turned into more. How many guinea pigs do we have now?');
+
+  if (q6 < 6) {
+    alert('Nope. Not enough. Try again.');
+    } else if (q6 > 6) {
+      alert('Nope. Too high.');
+    } else if (q6 == 6) {
+  alert('Way to go! You got it!');
+  break;
+}
+
+attempts--;
+}
+
+if (attempts === 0) {
+  alert('That was your last attempt. The answer is 6');
+}
+
+alert(`Thank you for playing this guessing game with me, ${userName}! You got ${correctCount} out of 5 correct!`);
 
 
 

@@ -34,3 +34,14 @@ I build an awesome "About Me" web page. It provides a brief overview of my bio, 
 * How do you see yourself planning and evaluating your learning? What details will you record and/or measure? How often will you evaluate what you want to learn? I am planning and evaluating my learning by attending Code Fellows. There is no way I could do this on my own. The lessons from Code Fellows and the resources provides are beginning to help me see how I might proceed with individual planning and evaluation in addition to that which Code Fellows provides. I am recording the details of what I learn in a notebook. I reocord reading notes in it, class notes in it, and notes from the additional sources provided by Code Fellows or discovered along the way. 
 
 * This is also a good place to reflect on the tools and resources used and learned: I am very excited to have found the Kevin Powell CSS YouTube channel. He provides so many tutorials that range in length from 5 minutes to nearly two hours. I was thinking I might just watch one per day. I learned so much just from the one video on grids. What I learned wasn't just about grids either. Powell talks about industry nuances as he's explaining the tool/function/code. It help me grasp the industry lingo better. I hope to be able to find a few more resources like this.
+
+# LAB - 03
+
+## About Me - Adding More Functionality
+
+**Following are highlights of what I am to add to this lab:**
+1.Create a Top Ten at bottom of page in an ordered list. Convert work and education to unordered lists.
+2.Q6 which provides feedback response experience. Numeric guessing game which indicates if user has guessed too high or too low. Only four opportunities. After 4th attempt, provide user with correct answer. Use a loop.
+3.Q7 should be about a thing for which there are multiple possible correct answers stored in an array. Only 6 attempts. Guesses end once user guess a correct answer or they run out of attempts. Display all possible correct answers. Use a loop.
+4.Tell user their final score out of the 7 questions.
+5.Analyze accessibility of the app using Lighthouse.
