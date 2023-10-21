@@ -89,7 +89,7 @@ if (q5 === 'Y' || q5 === 'YES'){
 //  console.log('Ai caramba, pobrecito! You are very mistaken.' + ' Thank you for playing this guessing game with me, ' + userName + '. Better luck next time! LOL!');
 //}
 
-//Q6
+//Q6 - For this one, I first consulted my notes, then Google, then chat GPT. Google helped me with figuring out how to code attempts. Chat GPT was the most helpful in dialoguing about options for making string and number work together. I used Replit, Go Live, and GitHub to check my works functionability. 
 
 let attempts = 4;
 let q6;
@@ -99,21 +99,21 @@ while (attempts > 0) {
 
   if (q6 < 6) {
     alert('Nope. Not enough. Try again.');
-    } else if (q6 > 6) {
-      alert('Nope. Too high.');
-    } else if (q6 == 6) {
-  alert('Way to go! You got it!');
-  break;
-}
-
-attempts--;
+  } else if (q6 > 6) {
+    alert('Nope. Too high. Try again.');
+  } else if (q6 == 6) {
+    alert('Way to go! You got it!');
+    break;
+  }
+  attempts--;
+  correctCount += 1;
 }
 
 if (attempts === 0) {
   alert('That was your last attempt. The answer is 6');
 }
 
-alert(`Thank you for playing this guessing game with me, ${userName}! You got ${correctCount} out of 5 correct!`);
+alert(`Thank you for playing this guessing game with me, ${userName}! You got ${correctCount} out of 6 correct!`);
 
 
 
