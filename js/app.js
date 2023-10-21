@@ -95,7 +95,7 @@ let attemptsQ6 = 4;
 let q6;
 
 while (attemptsQ6 > 0) {
-  q6 = prompt ('My daughter loves guinea pigs. During pandemic, she convinced us to get a couple. Somehow that couple turned into more. How many guinea pigs do we have now? You have 4 attempts to guess!');
+  q6 = prompt (`My daughter loves guinea pigs. During pandemic, she convinced us to get a couple. Somehow that couple turned into more. How many guinea pigs do we have now? You have ${attemptsQ6} guesses!`);
 
   if (q6 < 6) {
     alert('Nope. Not enough. Try again.');
@@ -121,7 +121,7 @@ let attemptsQ7 = 6;
 let namesOG = ['Prince', 'Violet', 'Pigawig'];
 
 for (let tries = attemptsQ7; tries > 0; tries--) {
-  let q7 = prompt(`Try to guess one of the three original guinea pigs's names! One is named after a former musician-artist of the 80s/90s. One is named after a flower. One's name is a play on part of the word "Guinea Pig". You have ${tries} left!`);
+  let q7 = prompt(`Now try to guess one of the three original guinea pigs's names! One is named after a former musician-artist of the 80s/90s. One is named after a flower. One's name is a play on part of the word "Guinea Pig". You have ${tries} tries left!`);
   q7 = q7.charAt(0).toUpperCase() + q7.slice(1).toLowerCase();
 
   let correctPiggyName = false;
@@ -129,6 +129,7 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
   for (let i = 0; i < namesOG.length; i++) {
     if (q7 === namesOG[i]){
       alert('Great guess!');
+      correctCount += 1;
       correctPiggyName = true;
       alert('You got it! Try guessing more!');
     }
@@ -136,7 +137,7 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
 
   if (correctPiggyName){
     alert('Great guess! You got it! Try guessing more!');
-    correctCount += 1;
+
   } else if (tries === 1) {
     alert(`No more tries. The correct possible answers were ${namesOG}`);
   } else {
@@ -145,7 +146,7 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
 }
 
 if (attemptsQ7 === 0) {
-  alert('That was your last try. The original piggy names are [0][1][2]');
+  alert('That was your last try. The original piggy names are [0][1] and [2]');
 }
 
 alert(`Thank you for playing this guessing game with me, ${userName}! You got ${correctCount} out of 6 correct!`);
