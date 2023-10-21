@@ -91,38 +91,62 @@ if (q5 === 'Y' || q5 === 'YES'){
 
 //Q6 - For this one, I first consulted my notes, then Google, then chat GPT. Google helped me with figuring out how to code attempts. Chat GPT was the most helpful in dialoguing about options for making string and number work together. I used Replit, Go Live, and GitHub to check my works functionability. 
 
-let attempts = 4;
+let attemptsQ6 = 4;
 let q6;
 
-while (attempts > 0) {
-  q6 = prompt ('My daughter loves guinea pigs. During pandemic, she convinced us to get a couple. Somehow that couple turned into more. How many guinea pigs do we have now?');
+while (attemptsQ6 > 0) {
+  q6 = prompt ('My daughter loves guinea pigs. During pandemic, she convinced us to get a couple. Somehow that couple turned into more. How many guinea pigs do we have now? You have 4 attempts to guess!');
 
   if (q6 < 6) {
     alert('Nope. Not enough. Try again.');
+    correctCount += 1;
   } else if (q6 > 6) {
     alert('Nope. Too high. Try again.');
   } else if (q6 == 6) {
     alert('Way to go! You got it!');
     break;
   }
-  attempts--;
-  correctCount += 1;
+  attemptsQ6--;
 }
 
-if (attempts === 0) {
+if (attemptsQ6 === 0) {
   alert('That was your last attempt. The answer is 6');
 }
 
+
+
+//Q7
+
+let attemptsQ7 = 6;
+let namesOG = ['Prince', 'Violet', 'Pigawig'];
+
+for (let tries = attemptsQ7; tries > 0; tries--) {
+  let q7 = prompt(`Try to guess one of the three original guinea pigs's names! One is named after a former musician-artist of the 80s/90s. One is named after a flower. One's name is a play on part of the word "Guinea Pig". You have ${tries} left!`);
+  q7 = q7.charAt(0).toUpperCase() + q7.slice(1).toLowerCase();
+
+  let correctPiggyName = false;
+
+  for (let i = 0; i < namesOG.length; i++) {
+    if (q7 === namesOG[i]){
+      alert('Great guess!');
+      correctPiggyName = true;
+      alert('You got it! Try guessing more!');
+    }
+  }
+
+  if (correctPiggyName){
+    alert('Great guess! You got it! Try guessing more!');
+    correctCount += 1;
+  } else if (tries === 1) {
+    alert(`No more tries. The correct possible answers were ${namesOG}`);
+  } else {
+    alert(`Sorry, '${q7}' is not a correct answer. Try again!`);
+  }
+}
+
+if (attemptsQ7 === 0) {
+  alert('That was your last try. The original piggy names are [0][1][2]');
+}
+
 alert(`Thank you for playing this guessing game with me, ${userName}! You got ${correctCount} out of 6 correct!`);
-
-
-
-
-
-
-
-
-
-
-
 
