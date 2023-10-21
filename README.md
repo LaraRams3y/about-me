@@ -41,7 +41,13 @@ I build an awesome "About Me" web page. It provides a brief overview of my bio, 
 
 **Following are highlights of what I am to add to this lab:**
 1.Create a Top Ten at bottom of page in an ordered list. Convert work and education to unordered lists.
+**my lists aren't working well.
 2.Q6 which provides feedback response experience. Numeric guessing game which indicates if user has guessed too high or too low. Only four opportunities. After 4th attempt, provide user with correct answer. Use a loop.
 3.Q7 should be about a thing for which there are multiple possible correct answers stored in an array. Only 6 attempts. Guesses end once user guess a correct answer or they run out of attempts. Display all possible correct answers. Use a loop.
 4.Tell user their final score out of the 7 questions.
+I'm having a difficult time figuring out where to place the counter within q6 and q7.
 5.Analyze accessibility of the app using Lighthouse.
+
+### Lighthouse Accessibility Report Score
+
+* [screenshot of accessability report](Lab02AccessibilityReport.png)
