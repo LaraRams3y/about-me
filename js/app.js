@@ -89,7 +89,49 @@ if (q5 === 'Y' || q5 === 'YES'){
 //  console.log('Ai caramba, pobrecito! You are very mistaken.' + ' Thank you for playing this guessing game with me, ' + userName + '. Better luck next time! LOL!');
 //}
 
-//Q6 - For this one, I first consulted my notes, then Google, then chat GPT. Google helped me with figuring out how to code attempts. Chat GPT was the most helpful in dialoguing about options for making string and number work together. I used Replit, Go Live, and GitHub to check my works functionability. 
+//Q6 -
+//DONE: Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
+//ACTION: create a variable to represent question.
+//DONE: Pick a number for my user to guess.
+//ACTION: create a variable to represent # (age).
+//DONE: Indicates through an alert if the guess is "too high"
+//ACTION: Create an if-else statement.
+//DONE: Alert if guess "too low".
+//ACTION: Add else if statement.
+//DONE: Alert if they are correct.
+//ACTION: Add else if statement.
+//DONE: It should give the user exactly four apportunities to get the correct answer. --LOOP
+//ACTION: Create LOOP using 'for' statement since this will run only 4 times.
+//TODO: After all attempts have been exhausted, tell the user the correct answer.
+
+//let myAge = 37;
+
+//for(let attempts = 4; attempts > 0; attempts--){
+//  let guessMyAge = prompt('What is my age?');
+
+//  if(guessMyAge > myAge){
+//    alert('Sorry too high');
+//  } else if(guessMyAge < myAge){
+//    alert('Sorry too low');
+//  } else if(Number(guessMyAge) === myAge){
+//    alert('Yay! You are correct');
+//    break;
+//    attempt = 0
+//  }
+//
+//   if(attempts === 1){
+//     alert('Sorry, you are out of guesses. The answer was 37');
+//    }
+//}
+
+
+//}
+//OR
+//for(let i = 0; i < 4; i++){
+//  let guessMyAge = prompt('What is my age?');
+//}
+
+//For this one, I first consulted my notes, then Google, then chat GPT. Google helped me with figuring out how to code attempts. Chat GPT was the most helpful in dialoguing about options for making string and number work together. I used Replit, Go Live, and GitHub to check my works functionability.
 
 let attemptsQ6 = 4;
 let q6;
@@ -102,7 +144,7 @@ while (attemptsQ6 > 0) {
     correctCount += 1;
   } else if (q6 > 6) {
     alert('Nope. Too high. Try again.');
-  } else if (q6 == 6) {
+  } else if (Number(q6) === 6) {
     alert('Way to go! You got it!');
     break;
   }
@@ -129,7 +171,6 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
   for (let i = 0; i < namesOG.length; i++) {
     if (q7 === namesOG[i]){
       alert('Great guess!');
-      correctCount += 1;
       correctPiggyName = true;
       alert('You got it! Try guessing more!');
     }
