@@ -171,11 +171,15 @@ if (attemptsQ6 === 0) {
 //  let boyBandGuess = prompt('Guess one of my fav boybands!');
 //
 //  for(let i = 0; i < boyBands.length; i++){
-//  if(boyBanGuess === boyBands[i]){
+//  if(boyBand Guess === boyBands[i]){
 //    alert('OMG I love them!!');
+//    attempts = 0;
+//    break;
 //    }
 //  }
-}
+//}
+// alert(`Here are all my fav boybands: ${boyBands}`);
+//
 
 let attemptsQ7 = 6;
 let namesOG = ['Prince', 'Violet', 'Pigawig'];
