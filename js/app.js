@@ -158,6 +158,24 @@ if (attemptsQ6 === 0) {
 
 
 //Q7
+//Add a 7th question
+//that has multiple possible correct answers that are stored in an array
+//Give the user 6 attempts to guess the correct answer. --LOOP
+//The guesses will end once the user guesses a correct answer
+//Guesses will end hwen they run out of attempts.
+//Display all the possible correct answer to the user.
+
+//let boyBands = ['backstreet boys', 'take that','one direction', 'bts'];
+
+//for(let attempts = 6; attempts > 0; attempts--){
+//  let boyBandGuess = prompt('Guess one of my fav boybands!');
+//
+//  for(let i = 0; i < boyBands.length; i++){
+//  if(boyBanGuess === boyBands[i]){
+//    alert('OMG I love them!!');
+//    }
+//  }
+}
 
 let attemptsQ7 = 6;
 let namesOG = ['Prince', 'Violet', 'Pigawig'];
