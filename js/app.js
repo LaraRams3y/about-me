@@ -155,9 +155,9 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
     alert('Wrong! Guess again.');
   }
 
-  if (correctCount > 0){
-    break;
-  }
+//  if (correctCount > 0){
+//    break;
+//  }
 }
 
 alert(`That was your last try. The original piggy names are ${namesOG}. Thank you for playing this guessing game with me, ${userName}! You got ${correctCount} out of 7 correct!`);
