@@ -151,6 +151,10 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
     }
   }
 
+  if (correctPiggyName){
+    break;
+  }
+
   if (!correctPiggyName){
     alert('Wrong! Guess again.');
   }
