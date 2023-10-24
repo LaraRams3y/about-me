@@ -140,26 +140,45 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
   let q7 = prompt(`Now try to guess one of the three original guinea pigs's names! One is named after a former artist-musician of the 80s/90s. One is named after a flower. One's name is a play on the word "Pig". You have ${tries} tries left!`);
   q7 = q7.charAt(0).toUpperCase() + q7.slice(1).toLowerCase();
 
-//  let correctPiggyName = false;
+  let correctPiggyName = false; //Initializing a flag to check if the guess is correct, as per advice of ChatGPT
 
   for (let i = 0; i < namesOG.length; i++) {
     if (q7 === namesOG[i]){
-      alert('Great guess! Guess again!');
+      alert('Great guess!');
       correctCount += 1;
-    } else if (tries === 0) {
-      alert('That was your last try. The original piggy names are [0][1][2]');
+      correctPiggyName = true;
+      break;
     }
   }
+
+  if(!correctPiggyName){
+    alert ('Wrong! Guess again.');
+  }
+
+  if (correctCount > 0){
+    break;
+  }
 }
+
+alert(`That was your last try. The original piggy names are ${namesOG}. Thank you for playing this guessing game with me, ${userName}! You got ${correctCount} out of 7 correct!`);
+
+//for (let tries = attemptsQ7; tries > 0; tries--) {
+//  let q7 = prompt(`Now try to guess one of the three original guinea pigs's names! One is named after a former artist-musician of the   80s/90s. One is named after a flower. One's name is a play on the word "Pig". You have ${tries} tries left!`);
+//  q7 = q7.charAt(0).toUpperCase() + q7.slice(1).toLowerCase();
+
+//  let correctPiggyName = false;
+
+//  for (let i = 0; i < namesOG.length; i++) {
+//    if (q7 === namesOG[i]){
+//      alert('Great guess!');
 //      correctPiggyName = true;
-//      alert('You got it! Try guessing more!');
+//      alert('You got it!');
 //    }
 //  }
 //}
 
 //  if (correctPiggyName){
 //    alert('Great guess! You got it! Try guessing more!');
-
 //  } else if (tries === 1) {
 //    alert(`No more tries. The correct possible answers were ${namesOG}`);
 //  } else {
@@ -171,4 +190,4 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
 //  alert('That was your last try. The original piggy names are [0][1] and [2]');
 //}
 
-alert(`That was your last try. The original piggy names are ${namesOG}. Thank you for playing this guessing game with me, ${userName}! You got ${correctCount} out of 7 correct!`);
+
