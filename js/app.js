@@ -143,16 +143,14 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
   let correctPiggyName = false; //Initializing a flag to check if the guess is correct, as per advice of ChatGPT
 
   for (let i = 0; i < namesOG.length; i++) {
-    if (q7 === namesOG[i]){
+    if (!correctPiggyName){
+      alert('Wrong! Guess again.');
+    } else if (q7 === namesOG[i]){
       alert('Great guess!');
       correctCount += 1;
       correctPiggyName = true;
       break;
     }
-  }
-
-  if (!correctPiggyName){
-    alert('Wrong! Guess again.');
   }
 }
 
