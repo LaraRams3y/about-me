@@ -151,8 +151,8 @@ for (let tries = attemptsQ7; tries > 0; tries--) {
     }
   }
 
-  if(!correctPiggyName){
-    alert ('Wrong! Guess again.');
+  if (!correctPiggyName){
+    alert('Wrong! Guess again.');
   }
 
   if (correctCount > 0){
